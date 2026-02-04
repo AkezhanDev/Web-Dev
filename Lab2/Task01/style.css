@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial;
+  background-color: #f0f2f5;
+  color: #1c1e21;
+}
+
+.page {
+  min-height: calc(100vh - 180px);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 16px;
+}
+.layout {
+  width: 100%;
+  max-width: 980px;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+.left {
+  flex: 1;
+}
+.right {
+  width: 400px;
+}
+.logo {
+  margin: 0 0 12px;
+  font-size: 56px;
+  line-height: 1;
+  color: #1877f2;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+.subtitle {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.2;
+  max-width: 420px;
+}
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.input {
+  height: 48px;
+  padding: 14px;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  font-size: 16px;
+}
+.btn-primary{
+    height:48px;
+    border:none;
+    border-radius: 6px;
+    background-color: #1877f2;
+    color:#fff;
+    font-size: 18px;
+    font-weight: 700;
+    cursor:pointer;
+}
+.btn-primary:hover{
+    background-color:#166fe5;
+}
+.btn-primary:active{
+    transform:scale(0,95);
+}
+.link{
+    text-align: center;
+    font-size:14px;
+    color:#1877f2;
+    text-decoration: none;
+}
+.link:hover{
+    text-decoration: underline;
+}
+.divider{
+    height: 1px;
+    background-color: #dadde1;
+    margin:10px;
+}
+.btn-success{
+    height:48px;
+    border:none;
+    border-radius: 6px;
+    background-color: #42b72a;
+    color:#fff;
+    font-size:16px;
+    font-weight:700;
+    cursor:pointer;
+    margin:0 auto;
+    padding:0 16px;
+}
+.btn-success:active{
+    transform:scale(0,98);
+}
+.below{
+    margin:16px 0 0;
+    font-size:14px;
+    text-align: center;
+
+
+}
+.footer {
+  background: #fff;
+  padding: 20px 0;
+}
+
+.footer-inner {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer a {
+  font-size: 12px;
+  color: #8a8d91;
+  text-decoration: none;
+}
+
+.footer-div {
+  height: 1px;
+  background: #dddfe2;
+  margin: 10px 0;
+}
+
+.footer-copy {
+  font-size: 12px;
+  color: #8a8d91;
+  margin-top: 10px;
+}

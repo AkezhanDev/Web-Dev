@@ -1,0 +1,297 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #ffffff;
+  color: #24292f;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 56px 24px 80px;
+  text-align: center;
+}
+
+.hero {
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 52px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  max-width: 860px;
+  margin: 0 auto 24px;
+  color: #57606a;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.cta {
+  display: inline-block;
+  background: linear-gradient(rgb(61, 61, 61), black);
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: stretch;
+  justify-content: center;
+  margin-top: 44px;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  background: #fff;
+  border: 1px solid #d0d7de;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(27, 31, 36, 0.12);
+}
+
+.card-head {
+  padding-bottom: 16px;
+}
+
+.plan-name {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.plan-desc {
+  color: #57606a;
+  line-height: 1.4;
+}
+
+.price {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: "Mona Sans", system-ui, sans-serif;
+}
+
+.price-num {
+  font-size: 48px;
+  font-weight: 650;
+}
+
+.price sup {
+  color: rgb(130, 130, 130);
+  font-size: 20px;
+  position: relative;
+  top: -0.9em;
+  padding-right: 4px;
+}
+
+.price sub {
+  font-weight: 650;
+  font-size: 20px;
+  position: relative;
+  top: -0.2em;
+  padding: 0 6px;
+}
+
+.per {
+  position: relative;
+  top: -0.5em;
+  color: #57606a;
+  font-size: 14px;
+}
+
+.btn-row {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn-dark {
+  background: linear-gradient(rgb(61, 61, 61), black);
+  color: #fff;
+}
+
+.btn-light {
+  background: #fff;
+  color: #111;
+  border: 1px solid rgb(142, 142, 142);
+}
+
+.included {
+  color: #57606a;
+  font-size: 14px;
+  margin: 4px 0 10px;
+}
+
+.details-list {
+  text-align: left;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 14px;
+  margin-top: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+summary {
+  list-style: none;
+  cursor: pointer;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #2d333b;
+  padding: 4px 0;
+}
+
+summary::before {
+  content: "›";
+  color: #57606a;
+  font-size: 18px;
+  transform: translateY(-1px);
+}
+
+details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.detail-body {
+  color: #57606a;
+  padding: 6px 0 4px 20px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.card-featured {
+  position: relative;
+  border-color: #1f6feb;
+}
+
+.badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  background: #1f6feb;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+.addons {
+  margin-top: 64px;
+  text-align: center;
+}
+
+.addons-title {
+  font-size: 56px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 24px;
+}
+
+.addon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 12px;
+}
+
+.addon-card {
+  background: #fff;
+  border: 1px solid #d0d7de;
+  border-radius: 10px;
+  padding: 28px;
+  text-align: left;
+
+  box-shadow: 0 6px 16px rgba(27, 31, 36, 0.08);
+  transition: 0.25s ease;
+}
+
+.addon-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(27, 31, 36, 0.14);
+}
+
+.addon-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #eef1f4;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 12px;
+}
+
+.addon-title {
+  font-size: 20px;
+  font-weight: 650;
+  margin-bottom: 10px;
+}
+
+.addon-text {
+  color: #57606a;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.addon-link {
+  color: #111;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .addon-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-row {
+    flex-direction: column;
+  }
+}
