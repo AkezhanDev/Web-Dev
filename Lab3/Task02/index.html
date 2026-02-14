@@ -6,32 +6,29 @@
     <title>To-Do List</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
     <header class="header">
-      <h1 class="title">To do list</h1>
+      <h1 class="header-title">ToDo List</h1>
+      <main class="container">
+        <form id="todo-form" class="todo-form">
+          <label class="label" for="todo-input">New Task</label>
+          <div class="input-group">
+            <input
+              id="todo-input"
+              class="todo-input"
+              name="task"
+              type="text"
+              placeholder="Enter a task..."
+              required
+              autocomplete="off"
+            />
+            <button class="add-btn" type="submit">Add</button>
+          </div>
+        </form>
+
+        <ul id="todo-list" class="todo-list"></ul>
+      </main>
     </header>
-
-    <main class="container">
-      <form id="todo-form" class="todo-form">
-        <label class="label" for="todo-input">New task</label>
-
-        <div class="input-group">
-          <input
-            class="input"
-            id="todo-input"
-            name="task"
-            type="text"
-            placeholder="Enter a task..."
-            required
-          />
-          <button class="btn" type="submit">Add</button>
-        </div>
-      </form>
-
-      <ul id="todo-list" class="todo-list"></ul>
-    </main>
-
-    <script src="script.js"></script>
+    <script src="scrypt.js"></script>
   </body>
 </html>

@@ -1,21 +1,22 @@
 const form = document.getElementById("todo-form");
 const input = document.getElementById("todo-input");
-const todoList = document.getElementById("todo-list");
+const list = document.getElementById("todo-list");
 
-form.addEventListener("submit", (event) => {
+form.addEventListener("submit", function (event) {
   event.preventDefault();
 
   const text = input.value.trim();
-  if (!text) return;
+  if (text === "") return;
 
-  addTodoItem(text);
-  input.value = "";
-  input.focus();
+  addTask(text);
+
+  input.value = ""; // update or delete previous string from input
+  input.focus(); // put cursor into the input field
 });
 
-function addTodoItem(text) {
-  const listItem = document.createElement("li");
-  listItem.className = "todo-item";
+function addTask(text) {
+  const li = document.createElement("li");
+  li.className = "todo-item";
 
   const left = document.createElement("div");
   left.className = "todo-left";
@@ -27,24 +28,24 @@ function addTodoItem(text) {
   span.className = "todo-text";
   span.textContent = text;
 
-  checkbox.addEventListener("change", () => {
-    span.classList.toggle("done", checkbox.checked);
+  checkbox.addEventListener("change", function () {
+    span.classList.toggle("done"); // toggle liike switcher add done to the todo-text
   });
 
   const delBtn = document.createElement("button");
+  delBtn.textContent = "Delete";
   delBtn.className = "delete-btn";
   delBtn.type = "button";
-  delBtn.textContent = "Delete";
 
-  delBtn.addEventListener("click", () => {
-    listItem.remove();
+  delBtn.addEventListener("click", function () {
+    li.remove();
   });
 
   left.appendChild(checkbox);
   left.appendChild(span);
 
-  listItem.appendChild(left);
-  listItem.appendChild(delBtn);
+  li.appendChild(left);
+  li.appendChild(delBtn);
 
-  todoList.appendChild(listItem);
+  list.appendChild(li);
 }
