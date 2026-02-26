@@ -1,0 +1,14 @@
+<div class="wrap">
+  <h1>Learn Angular (Task 1)</h1>
+
+  <nav style="display:flex; gap:16px; margin: 10px 0;">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+      Home
+    </a>
+    <a routerLink="/user" routerLinkActive="active">User</a>
+  </nav>
+
+  <hr />
+
+  <router-outlet />
+</div>
