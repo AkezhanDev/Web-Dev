@@ -1,0 +1,7 @@
+<div class="grid">
+  @for (p of products; track p.id) {
+    <app-product-item [product]="p" (remove)="onRemove($event)"></app-product-item>
+  } @empty {
+    <p>No products in this category</p>
+  }
+</div>

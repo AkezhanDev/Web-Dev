@@ -1,0 +1,101 @@
+.card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 12px;
+  background:black;
+}
+
+.img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.img-wrap{
+    width:100%;
+    height:190px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f2f2f2;
+}
+
+.name {
+  margin: 10px 0 6px;
+  font-size: 16px;
+}
+
+.desc {
+  margin: 0 0 10px;
+  color: #555;
+  font-size: 13px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.price { font-weight: 700;
+color:black; }
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.link {
+  text-decoration: none;
+  color: #0b57d0;
+  font-weight: 600;
+}
+
+.btn {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  background: #f7f7f7;
+}
+.btn:hover { background: #eee; }
+.rating {
+  font-weight: 700;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+.actions-row{
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.danger{
+  border-color: rgba(255,80,80,0.35);
+}
+
+.danger:hover{
+  box-shadow: 0 0 0 1px rgba(255,80,80,0.20);
+}
+.actions-row{
+  display:flex;
+  gap:8px;
+  margin-top:10px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  padding:10px 12px;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,0.14);
+  background:rgba(255,255,255,0.06);
+  color:rgba(255,255,255,0.9);
+  cursor:pointer;
+  font-weight:700;
+}
+
+.danger{
+  border-color: rgba(255,80,80,0.35);
+}
