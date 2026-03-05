@@ -1,0 +1,53 @@
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 14px 0;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.item:hover {
+  border-color: #ddd;
+}
+
+.meta {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+}
+
+.id {
+  font-weight: 700;
+}
+
+.title {
+  color: #333;
+}
+
+.danger {
+  border: 1px solid #f1c0c0;
+  background: transparent;
+  padding: 8px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.info {
+  margin-top: 10px;
+  color: #555;
+}
+
+.error {
+  margin-top: 10px;
+  color: #b00020;
+}
